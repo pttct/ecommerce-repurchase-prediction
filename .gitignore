@@ -1,0 +1,29 @@
+# Raw and intermediate datasets
+data/raw/
+data/interim/
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Training logs
+**/catboost_info/
+
+# Serialized models (keep locally)
+*.joblib
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Personal study notes
+notebooks/cheatsheet.ipynb
