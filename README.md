@@ -199,7 +199,7 @@ The tree lists the main publishable project files; private learning notes and te
    python -m pip install -r requirements.txt
    ```
 2. **Download the source workbook** from UCI and place it at `data/raw/online_retail_II.xlsx` (case-sensitive on some systems). Do not commit the workbook or generated Parquet data.
-3. **Prepare a fresh local MySQL database** and a user with permission to create tables and views. Execute `sql/01_create_tables.sql` using MySQL Workbench. The script currently contains a nonessential historical `SELECT SLEEP(35)` timeout diagnostic; omit that statement for a normal rebuild.
+3. Prepare a fresh local MySQL database and a user with permission to create tables and views. Execute `sql/01_create_tables.sql` using MySQL Workbench.
 4. **Import raw rows only into an empty `transactions_raw` table**:
    ```bash
    python scripts/import_transactions.py --check
